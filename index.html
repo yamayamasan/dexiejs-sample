@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div>
+      <div>
+       <ul id="notes"></ul>
+      </div>
+
+      <div id="form">
+        <form>
+            <div>
+            <input type="hidden" name="id" id="id" />
+            </div>
+
+            <div>
+            <label for="title">タイトル</label>
+            <input type="text" name="title" id="title" />
+            </div>
+
+            <div>
+            <label for="body">本文</label>
+            <textarea name="body" id="body"></textarea>
+            </div>
+
+            <div>
+            <label for="title">タグ</label>
+            <input type="text" name="tags" id="tags" />
+            </div>
+
+            <button type="button" id="delete">削除</button>
+            <button type="button" id="save" >保存</button>
+
+        </form>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script src="node_modules/dexie/dist/dexie.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

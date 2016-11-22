@@ -1,0 +1,9 @@
+{
+  "name": "dexie",
+  "version": "0.0.1",
+  "main": "main.js",
+  "license": "MIT",
+  "dependencies": {
+    "dexie": "^1.5.1"
+  }
+}
